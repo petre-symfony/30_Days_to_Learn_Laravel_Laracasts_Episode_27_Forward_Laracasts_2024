@@ -9,7 +9,11 @@
   <body>
     <div>
       <nav>
-        <div>logo</div>
+        <div>
+          <a href="">
+            <img src="{{ Vite::asset('resources/images/logo.svg') }}" alt="">
+          </a>
+        </div>
         <div>links</div>
         <div>post a job</div>
       </nav>
