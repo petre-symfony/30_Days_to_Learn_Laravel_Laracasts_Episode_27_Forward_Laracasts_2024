@@ -10,7 +10,7 @@
         <p>Full Time - From $60,000</p>
       </div>
 
-      <div class="flex justify-between items-center">
+      <div class="flex justify-between items-center mt-auto">
         <div>
           <a href="#">Tag</a>
           <a href="#">Tag</a>
