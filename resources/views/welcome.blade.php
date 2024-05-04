@@ -8,4 +8,12 @@
       <x-job-card/>
     </div>
   </section>
+
+  <section>
+    <x-section-heading>Tags</x-section-heading>
+  </section>
+
+  <section>
+    <x-section-heading>Recent Jobs</x-section-heading>
+  </section>
 </x-layout>
