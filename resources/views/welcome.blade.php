@@ -2,7 +2,7 @@
   <section>
     <h3>Top Jobs</h3>
 
-    <div>
+    <div class="p-4 bg-white/5 rounded-xl flex flex-col text-center">
       <div>Laracasts</div>
       <div>
         <h3>Video Producer</h3>
