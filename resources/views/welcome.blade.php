@@ -16,6 +16,19 @@
 
     <section>
       <x-section-heading>Recent Jobs</x-section-heading>
+
+      <div>
+        <x-tag>Tag</x-tag>
+        <x-tag>Tag</x-tag>
+        <x-tag>Tag</x-tag>
+        <x-tag>Tag</x-tag>
+        <x-tag>Tag</x-tag>
+        <x-tag>Tag</x-tag>
+        <x-tag>Tag</x-tag>
+        <x-tag>Tag</x-tag>
+        <x-tag>Tag</x-tag>
+        <x-tag>Tag</x-tag>
+      </div>
     </section>
   </div>
 </x-layout>
