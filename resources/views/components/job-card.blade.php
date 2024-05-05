@@ -13,6 +13,6 @@
       <x-tag>Tag</x-tag>
     </div>
 
-    <x-employer-logo />
+    <x-employer-logo :width="42"/>
   </div>
 </div>
