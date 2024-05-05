@@ -4,7 +4,7 @@
   </div>
 
   <div class="flex-1">
-    <a class="self-start text-sm">Laracasts</a>
+    <a class="self-start text-sm text-gray-400">Laracasts</a>
 
     <h3>Video Producer</h3>
     <p>Full Time - From $60,000</p>
