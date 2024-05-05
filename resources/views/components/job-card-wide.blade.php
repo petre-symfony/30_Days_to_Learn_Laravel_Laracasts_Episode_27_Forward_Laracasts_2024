@@ -6,8 +6,8 @@
   <div class="flex-1">
     <a class="self-start text-sm text-gray-400">Laracasts</a>
 
-    <h3>Video Producer</h3>
-    <p>Full Time - From $60,000</p>
+    <h3 class="font-bold text-lg">Video Producer</h3>
+    <p class="text-sm text-gray-400">Full Time - From $60,000</p>
   </div>
 
 
