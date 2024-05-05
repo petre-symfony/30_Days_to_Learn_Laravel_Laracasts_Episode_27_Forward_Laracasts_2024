@@ -1,4 +1,4 @@
-<div class="p-4 bg-white/5 rounded-xl flex">
+<div class="p-4 bg-white/5 rounded-xl flex gap-x-6">
   <div>
     <img src="http://placehold.it/42/42" alt="" class="rounded-xl">
   </div>
