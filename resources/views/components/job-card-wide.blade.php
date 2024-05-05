@@ -1,6 +1,8 @@
 <div class="p-4 bg-white/5 rounded-xl flex flex-col text-center">
-  <img src="http://placehold.it/42/42" alt="" class="rounded-xl">
-
+  <div>
+    <img src="http://placehold.it/42/42" alt="" class="rounded-xl">
+  </div>
+  
   <div>
     <a class="self-start text-sm">Laracasts</a>
 
