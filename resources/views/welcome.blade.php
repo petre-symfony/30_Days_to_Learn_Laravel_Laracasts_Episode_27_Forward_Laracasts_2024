@@ -1,10 +1,10 @@
 <x-layout>
   <div class="space-y-10">
-    <section>
+    <section class="text-center">
       <h1 class="font-bold text-4xl">Let's Find Your Next Job</h1>
 
       <form action="">
-        <input type="text" placeholder="Web Developer" class="rounded-xl bg-white/5 border-white/10 px-5 py-6">
+        <input type="text" placeholder="Web Developer" class="rounded-xl bg-white/25 border-white/10 px-5 py-6 w-full">
       </form>
     </section>
 
