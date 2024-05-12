@@ -1,5 +1,9 @@
 <?php
 
-test('it belongs to an employer', function () {
-	expect(true)->toBeFalse();
+it('belongs to an employer', function () {
+	//AAA
+
+	//Arange
+	//Act
+	//Assert
 });
