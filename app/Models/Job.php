@@ -18,6 +18,6 @@ class Job extends Model {
 	}
 
 	public function tags() {
-		return [];
+		return $this->belongsToMany(Tag::class);
 	}
 }
