@@ -7,3 +7,12 @@ it('belongs to an employer', function () {
 	//Act and Assert
 	expect($job->employer()->is($employer))->toBeTrue();
 });
+
+it('can have tags', function (){
+	//AAA
+	$job = \App\Models\Job::factory()->create();
+
+	$job->tag('frontend');
+
+	expect($job->tags)->toHaveCount(1);
+});
