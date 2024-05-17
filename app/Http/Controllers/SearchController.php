@@ -6,8 +6,8 @@ use App\Models\Job;
 
 class SearchController extends Controller {
 	public function __invoke() {
-		$json = Job::where('title', 'like', '%'.request('q').'%')->get();
+		$jobs = Job::where('title', 'like', '%'.request('q').'%')->get();
 
-		return $json;
+		return view('results', ['jobs' => $jobs]);
 	}
 }
