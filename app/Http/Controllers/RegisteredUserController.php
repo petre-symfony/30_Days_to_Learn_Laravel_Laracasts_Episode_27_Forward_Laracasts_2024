@@ -10,13 +10,6 @@ use Illuminate\Validation\Rules\Password;
 
 class RegisteredUserController extends Controller {
 	/**
-	 * Display a listing of the resource.
-	 */
-	public function index() {
-		//
-	}
-
-	/**
 	 * Show the form for creating a new resource.
 	 */
 	public function create() {
@@ -28,7 +21,7 @@ class RegisteredUserController extends Controller {
 	 */
 	public function store(Request $request) {
 		$userAttributes = $request->validate([
-			'name' => ['required'],
+			'employer' => ['required'],
 			'email' => ['required', 'email', 'unique:users,email'],
 			'password' => ['required', 'confirmed', Password::min(6)]
 		]);;
@@ -40,34 +33,14 @@ class RegisteredUserController extends Controller {
 
 		$user = User::create($userAttributes);
 
+		$logoPath = $request->logo->store('logos');
+		$user->employer()->create([
+			'name' => $employerAttributes['employer'],
+			'logo' => $logoPath
+		]);
+
 		Auth::login($user);
-	}
 
-	/**
-	 * Display the specified resource.
-	 */
-	public function show(string $id) {
-		//
-	}
-
-	/**
-	 * Show the form for editing the specified resource.
-	 */
-	public function edit(string $id) {
-		//
-	}
-
-	/**
-	 * Update the specified resource in storage.
-	 */
-	public function update(Request $request, string $id) {
-		//
-	}
-
-	/**
-	 * Remove the specified resource from storage.
-	 */
-	public function destroy(string $id) {
-		//
+		return redirect('/');
 	}
 }
