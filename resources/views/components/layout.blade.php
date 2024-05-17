@@ -27,7 +27,7 @@
           <a href="#">Salaries</a>
           <a href="#">Companies</a>
         </div>
-        
+
         @auth
         <div>
           <a href="/jobs/create">Post a Job</a>
