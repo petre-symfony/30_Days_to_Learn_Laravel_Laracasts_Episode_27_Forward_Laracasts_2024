@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rules\Password;
 
 class RegisteredUserController extends Controller {
 	/**
@@ -23,7 +24,11 @@ class RegisteredUserController extends Controller {
 	 * Store a newly created resource in storage.
 	 */
 	public function store(Request $request) {
-		dd($request->all());
+		$request->validate([
+			'name' => ['required'],
+			'email' => ['required', 'email', 'unique:users,email'],
+			'password' => ['required', 'confirmed', Password::min(6)]
+		]);;
 	}
 
 	/**
