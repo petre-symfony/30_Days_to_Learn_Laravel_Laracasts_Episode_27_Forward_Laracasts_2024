@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [JobController::class, 'index']);
 
 Route::get('/search', SearchController::class);
-Route::get('/tags/{tag}', TagController::class);
+Route::get('/tags/{tag:name}', TagController::class); //tags frontend
 
 Route::middleware('guest')->group(function (){
 	Route::get('/register', [RegisteredUserController::class, 'create']);

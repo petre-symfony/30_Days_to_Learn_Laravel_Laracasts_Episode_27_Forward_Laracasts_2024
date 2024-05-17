@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-class TagController {
-	public function __invoke() {
-		//jobs for this tag;
+use App\Models\Tag;
 
-		return view('results', ['jobs' => $jobs]);
+class TagController {
+	public function __invoke(Tag $tag) {
+		return view('results', ['jobs' => $tag->jobs]);
 	}
 }
